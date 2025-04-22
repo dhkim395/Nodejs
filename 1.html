@@ -1,0 +1,26 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <h2>로그인</h2>
+    <p>아이디: <input type="text" id="userid" /></p>
+    <p>비밀번호: <input type="text" id="userpw" /></p>
+    <p><button id="loginBtn">로그인</button></p>
+
+    <script>
+      document.getElementById("loginBtn").addEventListener("click", () => {
+        const userid = document.getElementById("userid").value;
+        const userpw = document.getElementById("userpw").value;
+
+        // location.href로 GET 방식 전송
+        location.href = `/login?userid=${encodeURIComponent(
+          userid
+        )}&userpw=${encodeURIComponent(userpw)}`;
+      });
+    </script>
+  </body>
+</html>
