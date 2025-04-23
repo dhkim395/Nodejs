@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node 6_json.js",
-    "dev": "nodemon 10.js"
+    "dev": "nodemon 15_routing.mjs"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +12,9 @@
   "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
