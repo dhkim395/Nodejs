@@ -11,5 +11,11 @@
     <p>아이디: <input type="text" name="userid" id="userid" /></p>
     <p>비밀번호: <input type="text" name="userpw" id="userpw" /></p>
     <p><button id="loginBtn">로그인</button></p>
+    <!-- enctype="multipart/form-data"  를 작성해야 서버로 넘어감 -->
+      <form action="/upload-single" method="post" enctype="multipart/form-data">
+        <p>
+          파일 업로드<input type="file" name="file">
+        </p>
+      </form>
   </form> 
 </html>
